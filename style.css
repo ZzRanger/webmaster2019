@@ -1,4 +1,7 @@
-<style>
+
+background{
+  color: #D84F00l;
+}
 body{
   color: blue;
   padding: 2em;
@@ -8,4 +11,3 @@ hr{
   transform: rotate(30deg);
   width: 50px;
 }
-</style>
