@@ -1,4 +1,11 @@
+<style>
 body{
   color: blue;
   padding: 2em;
 }
+
+hr{
+  transform: rotate(30deg);
+  width: 50px;
+}
+</style>
