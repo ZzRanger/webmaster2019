@@ -3,6 +3,10 @@ body{
   padding: 2em;
   background-color: #00000;
 }
+image{
+width: 768px;
+height: 768px;
+}
 
 .line{
 	transform: rotate(-10deg);
