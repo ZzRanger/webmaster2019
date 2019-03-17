@@ -1,13 +1,24 @@
-
-background{
-  color: #D84F00l;
-}
 body{
   color: blue;
   padding: 2em;
+  background-color: #00000;
 }
 
-hr{
-  transform: rotate(30deg);
-  width: 50px;
+.line{
+	transform: rotate(-10deg);
+	background-image: linear-gradient(red, blue);
+	background-size: 20px 100%;
+	position: float;
 }
+
+.main{
+	position:relative;
+	top:20px;
+	color: blue;
+	text-align:right;
+}
+
+.mySlides{
+	width: 100%;
+	height: 100px;
+	margin: auto;
