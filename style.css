@@ -8,6 +8,16 @@ width: 768px;
 height: 768px;
 }
 
+
+li a{
+	display:block;
+	
+}
+
+#nav{
+	
+}
+
 .line{
 	transform: rotate(-10deg);
 	background-image: linear-gradient(red, blue);
