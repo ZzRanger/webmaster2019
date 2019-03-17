@@ -15,7 +15,8 @@ li a{
 }
 
 #nav{
-	
+	overflow:hidden;
+	list-style-type: none;
 }
 
 .line{
