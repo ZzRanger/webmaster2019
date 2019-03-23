@@ -1,3 +1,6 @@
+#merch{
+	display: flex;
+}
 .tshirt{
   width: 768px;
   height:768px;
