@@ -13,31 +13,53 @@
 </head>
 
 <body>
-<h1><a href = "merch.html"> Shop</a></h1>
  
-<div>
-	<<a href = "home.html">SHU</a>|
-	<a href = "merch.html"> Merch </a>|
-	<a href = "music.html"> Music </a>|
-	<a href = "news.html"> News </a>|
+<div class="navbar">
+	<a href = "home.html">SHU</a>
+	<a href = "home.html#tour"> Tour Dates</a>
+	<a href = "home.html#merch"> Store </a>
+	<a href = "home.html#music"> Music </a>
+	<a href = "news.html"> About </a>
 </div>
-  
-<div id="image">
- 	 <img src = "white_full.png" alt="white space">
-  </div>
+
 <div id="merch">
-  <div id="info">
-  <p>t-shirt name<br>
-	price<br>
-	size<select>
-	  <option value="small">S</option>
-	  <option value="medium">M</option>
-	  <option value="large">L</option>
-	</select>
-	quantity 
-	Information about t-shirt/arrival time
-  </p>
-	</div>
+
+<table>
+	<th>
+		<h1>t-shirt name</h1>
+	</th>
+	
+	<tr>
+		<td>
+			<div id="image">
+			<img src = "piano.jpg" alt="white space">
+			</div>
+		</td>
+		
+		<td>
+			  <div id="info">
+			  <p>
+				$40<br><br>
+				size<select class="click" >
+				  <option value="small">S</option>
+				  <option value="medium">M</option>
+				  <option value="large">L</option>
+				</select>
+				<br><br>
+				quantity
+				<select class="click">
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				</select><br>
+				Arrives in 4-5 business days
+			  </p>
+				</div>
+		</td>
+	</tr>
+	
+</table>
 	</div>
   </body>
 </html>
