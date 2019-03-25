@@ -21,8 +21,10 @@ button{
 	color: black;
 }
 
+
 #music{
 	display:grid;
+	margin: 20px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 
@@ -30,6 +32,8 @@ button{
 
 .box{
 	border: 1px solid black;
+	padding: 1em;
+	margin: .5em;
 }
 .album{
 	width: 450px;
@@ -39,9 +43,15 @@ button{
 
 .album1{
 	grid-rows: 2 / 4;
-	grid-columns: 1 / 4;
+	grid-columns: 0 / 4;
 	
 }
+
+.header{
+	width: 100%;
+	height: 130px;
+}
+
 .line{
 	transform: rotate(-10deg);
 	background-image: linear-gradient(red, blue);
