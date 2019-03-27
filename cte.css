@@ -1,0 +1,97 @@
+/* Navbar */
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+.norm {
+	flex-grow: 1;
+}
+
+.space {
+	flex-grow: 5;
+}
+
+/* Rest of Code */
+
+.mainheading {
+	background-color: blue;
+}
+
+.title {
+	text-align: center;
+	font-size: 100px;
+	vertical-align: center;
+	padding: 50px;
+}
+
+.browse {
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+	grid-auto-rows: auto;
+	justify-items: center;
+	background-color: orange;
+	grid-gap: 0px;
+}
+
+.browse h1 {
+	grid-column: 1 / -1;
+	font-size: 60px;
+}
+.course {
+	display: flex;
+	background-color: red;
+	color: #ffeead;
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 70px;
+	justify-content: center;
+	align-items: center;
+}	
+
+.summarytemplate {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+	grid-auto-rows: auto;
+	justify-items: center;
+	height: 100%;
+	padding: 200px;
+	background-color: magenta;
+}
+
+.summary {
+	text-align: center;
+	text-size: 14px;
+}
+
+.ON {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFA07A;
+	justify-content: center; 
+	align-items: center;
+	color: black;
+	padding: 20px;
+}

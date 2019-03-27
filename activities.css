@@ -1,0 +1,114 @@
+/* Navbar */
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .navbar{   
+    flex-direction: column;
+  }
+}
+
+.norm {
+	flex-grow: 1;
+}
+
+.space {
+	flex-grow: 9;
+}
+
+/* Rest of Code */
+
+.mainheading {
+	font-size: 40px;
+	text-align: center;
+	vertical-align: center;
+	background-color: gray;
+	padding: 50px;
+}
+
+.miniheading {
+	text-align: center;
+	padding: 10px;
+	grid-column: 1 / -1;
+	font-size: 25px;
+	grid-auto-rows: auto;
+}
+
+.calendar {
+	display: grid;
+	background-color: pink;
+	padding: 20px;
+	vertical-align: center;
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+	grid-auto-rows: auto;
+	justify-items: center;
+	background-color: green;
+}
+
+.calheading {
+	font-size: 24px;
+	font-style: underline;
+	font-weight: bold;
+}
+
+.item {
+}
+
+.comp {
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.minititle {
+	font-size: 30px;
+	text-align: center;
+	padding: 20px;
+}
+
+.lit {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+	grid-auto-rows: auto;
+	justify-items: center;
+	background-color: yellow;
+}
+.desc {
+	font-size: 15px;
+}
+
+.picture {
+  padding-top: 25px;
+  max-width: 100%;
+  height: auto;
+}
+
+.ON {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFA07A;
+	justify-content: center; 
+	align-items: center;
+	color: black;
+	padding: 20px;
+}
