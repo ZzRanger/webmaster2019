@@ -1,52 +1,242 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="merchstyle.css">
+  <link rel="stylesheet" href="cte.css">
+  <link rel="stylesheet" href="chapter.css">
   <script src="script.js"></script>
-  <link href="bio.html" rel="stylesheet" media="print">
-  <link href="merch.html" rel="stylesheet" media="print">
-  <link href="music.html" rel="stylesheet" media="print">
-  <link href="news.html" rel="stylesheet" media="print">
-  <link href="tour.html" rel="stylesheet" media="print">
+  <link href="about.html" rel="stylesheet" media="print">
+  <link href="chapter.html" rel="stylesheet" media="print">
+  <link href="chapter_history.html" rel="stylesheet" media="print">
+  <link href="chapter_officers.html" rel="stylesheet" media="print">
+  <link href="chapter_activities.html" rel="stylesheet" media="print">
 </head>
 
 <body>
  
- 
 <div class="navbar">
-  <a class = "norm" href="#">SHU/home</a>
-  <a class = "norm" href="#">Tour</a>
-  <a class = "norm" href="#">Music</a>
-  <a class = "norm"  href="#">Store</a>
-  <a class = "norm" href="#">About</a>
-  <a class = "space" href="#"></a>
-  <a class = "norm" href="#">Chapter</a>
-  <a class = "norm" href="#">CTE</a>
-  <a class = "norm" href="#">Design Brief</a>
+	<a href = "home.html">SHU</a>
+	<a href = "home.html#tour"> Tour Dates</a>
+	<a href = "home.html#merch"> Store </a>
+	<a href = "home.html#music"> Music </a>
+	<a href = "about.html"> About </a>
 </div>
 
-<div>
-	<img class="mySlides" src="">
-	<img class="mySlides" src="">
-</div>
+
+<div class="slide-container">
+
+	<div class="mySlides">
+		<img src="album.png">
+	</div>
+	
+	<div class="mySlides">
+		<img src="text.png">
+	</div>
+ </div>
  
+ 
+	<img class="header" src="music.png">
 	<div id= "music">
-	  <h2>Albums</h2>
-	 
 		 <!--use a grid-->
 		 <div>
 			<img class="album" src="umbrella.png">
-			<a href=""> Listen Here! </a>
+			<!-- <a href=""> Listen Here! </a> -->
 		</div>
 		
 		<div>
 			<img class="album" src="sky.png">
-			<a href=""> Listen Here! </a>
+			<!-- <a href=""> Listen Here! </a> -->
+		</div>
+		
+		<div>
 	 	<img class="album1" src="legend.png">
-	 			<a href=""> Listen Here! </a>
+	 			<!-- <a href=""> Listen Here! </a> -->
+		</div>
+	 </div>
+	 
+	 
+	  <hr>
+  <img class="header" src="tour.png">
+  <table id="tour">
+    <tr>
+      <th>Dates</th>
+      <th>Venue</th>
+      <th>City</th>
+      <th>Tickets</th>
+    </tr>
+    
+    <tr>
+      <td class="box">March 4</td>
+      <td>The Orpheum</td>
+      <td>Vancouver, Canada</td>
+      <td>Sold Out</td>
+    </tr>
 
+    <tr>
+      <td class="box">March 18</td>
+      <td>Royce Hall</td>
+      <td>Los Angeles, California</td>
+      <td>
+        Sold Out
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">March 29</td>
+      <td>Sympony Center</td>
+      <td>Chicago, Illinois</td>
+      <td>
+      <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">April 6</td>
+      <td>Teatro Colon</td>
+      <td>Buenos Aires, Argentina</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">April 18</td>
+      <td>Teatro Municipal</td>
+      <td>Rio de Janeiro, Brazil</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">May 6</td>
+      <td>Royal Festival Hall</td>
+      <td>London, England</td>
+      <td>
+        <button type="button">Tickets</button>
+       <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">May 17</td>
+      <td>Berliner Philharmonie</td>
+      <td>Berlin, Germany</td>
+      <td>
+       <button type="button">Tickets</button>
+       <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">May 31</td>
+      <td>Musiikkitalo</td>
+      <td>Helinsinki, Finland</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">June 11</td>
+      <td>Thailand Cultural Center</td>
+      <td>Bangkok, Thailand</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">June 21</td>
+      <td>Beijing Gold Sail Concert Hall</td>
+      <td>Beijing, China</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">July 5</td>
+      <td>Taipei National Theater and Concert Hall</td>
+      <td>Taipei, Taiwan</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">July 17</td>
+      <td>Seoul Arts Center</td>
+      <td>Seoul, South Korea</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">August 2</td>
+      <td>New National Theatre</td>
+      <td>Toyko, Japan</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">August 10</td>
+      <td>Kyoto Concert Hall</td>
+      <td>Kyoto, Japan</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="box">August 25</td>
+      <td>Syndey Opera House</td>
+      <td>Sydney, Australia</td>
+      <td>
+        <button type="button">Tickets</button>
+        <button type = "button"> VIP </button>
+      </td>
+    </tr>
+
+  </table>
+
+  
+  <hr>
+  
+ <img class="header" src="shop.png">
+ <div id="merch">
+ 
+ 
+  <img class="tshirt" src="piano.jpg" alt="tshirtA">
+<a href="merch1.html" target"=_blank">Spring Piano</a>
+  
+  <img class="tshirt" src="shu.jpg" alt="tshirtA">
+  <a href="merch2.html" target"=_blank">Blossoms</a>
+  
+ <img class="tshirt" src="tshirt.jpg" alt="tshirtA">
+ <a href="merch3.html" target"=_blank">Eunoia Tour T-shirt</a>
+ 
+  
+ </div>
+ 
+ 
+</body>
+
+</html>
 	 </div>
 	</div>
 	 
