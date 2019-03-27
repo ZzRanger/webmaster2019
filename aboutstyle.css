@@ -1,0 +1,12 @@
+.grid{
+display: grid;
+
+}
+
+.word{
+word-wrap: break;
+}
+
+.bio{
+border-radius: 25%;
+}
