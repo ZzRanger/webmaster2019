@@ -33,6 +33,10 @@
 
 /* Rest of Code */
 
+body {
+	font-family: arial;
+}
+
 .mainheading {
 	font-size: 40px;
 	text-align: center;
@@ -45,8 +49,8 @@
 	text-align: center;
 	padding: 10px;
 	grid-column: 1 / -1;
-	font-size: 25px;
-	grid-auto-rows: auto;
+	font-size: 45px;
+	
 }
 
 .calendar {
@@ -94,7 +98,7 @@
 	background-color: yellow;
 }
 .desc {
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .picture {
