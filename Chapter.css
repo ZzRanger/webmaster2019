@@ -24,13 +24,14 @@
 }
 .norm {
 	flex-grow: 1;
+	text-decoration: none;
 }
 
 .space {
 	flex-grow: 5;
 }
 
-/* Rest of Code */
+/* Main Heading */
 
 .mainheading {
 	display: flex;
@@ -79,25 +80,81 @@ height: 500px;
 	font-weight: bolder;
 }
 
+/* Rest of Code */
+
+/* Info Stuff 
+
 .info {
-	background-color: #add8e6;
-	padding: 50px;
+  display: flex;
+  background-color: #333;
 }
 
-.heading {
-	font-size: 36px;
-	padding-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
-	padding-bottom: 20px;
-	grid-column: 1 / -1;
+.info div {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .info {   
+    flex-direction: column;
+  }
+}
+
+.logo {
+	width: 100%;
+	height: 100%;
+}
+
+*/
+.info {
+	background-color: #add8e6;
+	display: grid;
+	padding: 40px;
+}
+
+.info div {
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.headingflex {
+	display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .headingflex {   
+    flex-direction: column;
+  }
+}
+
+.logo {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding-right: 20px;
+	margin: 0px;
 }
 
 .body {
+	display: flex;
 	font-size: 18px;
-	margin-left: 20px;
-	margin-right: 20px;
+	padding: 0px;
+	justify-content: center;
+	align-items: center;
 }
+
+.heading {
+	display: flex;
+	font-size: 60px;
+	padding: 0px;
+	margin-left: 0px;
+	align-items: left;
+}
+
+
 
 .line {
 	text-align: center;
@@ -105,10 +162,11 @@ height: 500px;
 }
 
 .tsainfo {
-	background-color: green;
+	background-color: #000066;
 	padding: 50px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+	color: white;
 }
 
 
@@ -120,6 +178,7 @@ height: 500px;
 	font-size: 40px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	font-family: Gabriola;
 }
 
 .missionstatement {
@@ -128,47 +187,63 @@ height: 500px;
 
 }
 
-.logo {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-}
-
-.logo > img {
-	display: block;
-	position: static;
-	width: 50%;
-	height: 50%;
-	padding: 20px;
-}
-
 .learnmore {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 	grid-auto-rows: auto;
-	justify-items: center;
+	background-color: #003399;
+	padding: 100px;
+	grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
 }
 
 .course {
 	display: flex;
-	background-color: red;
-	color: #ffeead;
-	width: 300px;
-	height: 300px;
-	border: 1px solid black;
+	background-color: white;
 	border-radius: 20px;
-	margin-top: 50px;
-	margin-bottom: 70px;
+	padding: 10px;
+	font-size: 40px;
+	justify-content: center;
+	font-family: Itim;
+}	
+
+.buttonclass {
+	display: flex;
 	justify-content: center;
 	align-items: center;
-}	
+}
+
+.button:hover {
+  background-color: #87ceeb; 
+  color: black;
+}
+
+.button {
+  background-color: #3366cc;
+  border: solid black 3px;
+  color: white;
+  padding: 25px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.normtwo {
+	flex-grow: 1;
+	text-decoration: none;
+	color: white;
+}
 
 .ON {
 	display: flex;
 	flex-direction: column;
-	background-color: #FFA07A;
 	justify-content: center; 
 	align-items: center;
 	color: black;
@@ -176,33 +251,34 @@ height: 500px;
 }
 
 .ONTSA {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+	display: flex;
 	width: 100%;
 	height: 500px;
 	min-width: 100%;
 	min-height: 100%;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	font-size: 120px;
+	flex-direction: column;
 }
 
 
 .ONTitle {
-	font-size: 50px;
+	font-size: 40px;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 10px;
 }
 
 .box {
-	position: relative;
-	top: 150px;
-	right: -550px;
 	display: flex;
-	border: 1px solid black;
-	width: 40em;
-	height: 12em;  
+	flex-template-columns: 1fr;
 	flex-direction: column;
-	content-align: center;
-	margin: 10px;
+	margin: 30px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.8;
 }
 
 .ONTSA::before {
@@ -218,8 +294,9 @@ width: 100%;
 height: 500px;
 }
 
-
 .ONdescription {
+	margin: 10px;
+	font-size: 20px;
 }
 
 .headingtwo {
