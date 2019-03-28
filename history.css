@@ -30,20 +30,49 @@
 	flex-grow: 5;
 }
 
-/* Rest of Code */
+/* Title */
 
 .mainheading {
-	font-size: 40px;
+	display: flex;
+	width: 100%;
+	height: 500px;
+	min-width: 100%;
+	min-height: 100%;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+.mainheading::before {
+background-image: url("olathenorth.png");
+background-attachment: fixed;
+background-size: cover;
+content: "";
+display: block;
+position: absolute;
+z-index: -2;
+opacity: 0.4;
+width: 100%;
+height: 500px;
+}
+
+.title {
+	font-size: 60px;
 	text-align: center;
 	vertical-align: center;
-	background-color: gray;
-	padding: 50px;
+	color:	white;
+	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+	opacity: 1;
+	font-weight: bolder;
 }
+/* Rest of Code */
 
 .desctemplate {
 	text-align: center;
-	background-color: white;
-	padding: 20px;
+	background-color: #99FFFF;
+	padding: 50px;
 }
 
 .minititle {
@@ -56,7 +85,8 @@
 }
 
 .awardstemplate {
-	background-color: blue;
+	background-color: #FFF66;
+	padding: 50px;
 }
 
 .awardstitle {
@@ -77,23 +107,28 @@
 }
 
 .state {
-	background-color: brown;
+	background-color: #99FF99;
+	padding: 50px;
 }
 
 .stateinfo {
 	text-align: center;
 	vertical-align: center;
+	padding: 20px;
 }
 
-.stategrid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+.img {
+}
+
+.eventdesc{
+	text-align: center;
+	vertical-align: center;
+	padding: 10px;
 }
 
 .ON {
 	display: flex;
 	flex-direction: column;
-	background-color: #FFA07A;
 	justify-content: center; 
 	align-items: center;
 	color: black;
