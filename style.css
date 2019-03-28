@@ -10,20 +10,17 @@ button{
 	border-radius: 25%;
 }
 
+ul{
+	margin:10em 5em 5em;
+	padding:1em;
+	
+}
 #tour{
 	padding: 1em;
 	font-family: "segoe script";
 	color: black;
 }
 
-
-#music{
-	display:grid;
-	margin: 20px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-
-}
 
 .box{
 	border: 1px solid black;
@@ -33,18 +30,15 @@ button{
 .album{
 	width: 450px;
 	height: 450px;
-	
+	margin:.5em;
 }
 
-.album1{
-	grid-rows: 2 / 4;
-	grid-columns: 0 / 4;
-	
-}
 
 .header{
 	width: 100%;
-	height: 130px;
+	/*height: 130px;*/
+	text-align: center;
+	padding: 0;
 }
 
 .line{
@@ -61,38 +55,36 @@ button{
 	text-align:right;
 }
 
-.mySlides{
-	width: 100%;
-	height: 100px;
+.slide-container{
+	max-width: 100%;
 	margin: auto;
+	
 }
+
+
 
 a:hover{
 	background: #00000;	
 	}
 
-/* Navbar code */
-
-.navbar{
-display: flex;
+.navbar {
+  display: flex;
   background-color: #333;
   position:fixed;
   top:0;
   width:100%
+  
 }
-
 .navbar a {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
-
 .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
-
 @media screen and (max-width: 700px) {
   .row, .navbar {   
     flex-direction: column;
@@ -101,8 +93,6 @@ display: flex;
 .norm {
 	flex-grow: 1;
 }
-
 .space {
 	flex-grow: 5;
 }
-
