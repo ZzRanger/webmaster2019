@@ -69,6 +69,7 @@
 	margin-bottom: 70px;
 	justify-content: center;
 	align-items: center;
+	font-size: 40px;
 }	
 
 .summarytemplate {
@@ -77,21 +78,9 @@
 	grid-auto-rows: auto;
 	justify-items: center;
 	height: 100%;
-	padding: 200px;
-	background-color: magenta;
 }
 
 .summary {
 	text-align: center;
 	text-size: 14px;
-}
-
-.ON {
-	display: flex;
-	flex-direction: column;
-	background-color: #FFA07A;
-	justify-content: center; 
-	align-items: center;
-	color: black;
-	padding: 20px;
 }
