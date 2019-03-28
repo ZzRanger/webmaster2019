@@ -1,12 +1,9 @@
-.grid{
-display: grid;
-
-}
-
 .word{
 word-wrap: break;
+  flex: 70%;
 }
 
 .bio{
 border-radius: 25%;
+  flex:30%;
 }
