@@ -33,6 +33,7 @@
 /* Rest of Code */
 
 body {
+	font-family: arial;
 }
 
 /* CSS Classes on CTE */
@@ -81,7 +82,16 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 	background-color: #E6E6FA;
 	padding: 20px;
-	grid-gap: 10px;
+	grid-gap: 20px;
+	justify-items: center;
+}
+
+.dot {
+	grid-column: 1 / -1;
+	background-color: #E6E6FA;
+	padding-left: 10px;
+	font-size: 40px;
+	padding: 5px;
 }
 
 .projectphoto {
@@ -90,6 +100,11 @@ body {
 }
 
 .projectinfo {
+	display: flex;
+	font-size: 25px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .studentheading {
@@ -99,10 +114,15 @@ body {
 }
 
 .project {
+	display: flex;
 	font-size: 15px;
+	justify-content: center;
+	align-items: center;
 }
+
 .space {
 	grid-column: 1 / -1;
+	padding: 10px;
 }
 
 .browse {
@@ -144,11 +164,10 @@ body {
 
 .teachpics {
 }
+
 .desc {
 	text-align: center;
 }
-
-
 
 .teacherpic {
 	width: 100%;
