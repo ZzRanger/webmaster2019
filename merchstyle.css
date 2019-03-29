@@ -1,3 +1,6 @@
 #merch{
 	display: flex;
 }
+
+.tshirt{
+	flex: 30%
