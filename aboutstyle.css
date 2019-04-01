@@ -6,4 +6,6 @@ word-wrap: break;
 .bio{
 border-radius: 25%;
   flex:30%;
+  width: 75%;
+  height:50%;
 }
