@@ -64,7 +64,11 @@ ul{
 	
 }
 
-
+.slides{
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
 
 @keyframes fade {
   0% {
