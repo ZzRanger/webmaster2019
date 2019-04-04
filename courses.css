@@ -1,8 +1,17 @@
+body {
+	font-family: arial;
+	margin:0;
+	padding:0;
+}
+
 /* Navbar */
 
 .navbar {
   display: flex;
   background-color: #333;
+  position: fixed;
+  width: 100%;
+  top:0;
 }
 
 .navbar a {
@@ -28,12 +37,6 @@
 
 .space {
 	flex-grow: 5;
-}
-
-/* Rest of Code */
-
-body {
-	font-family: arial;
 }
 
 /* CSS Classes on CTE */
@@ -66,6 +69,7 @@ body {
 	font-weight: bold;
 	color: white;  
 	margin-top: 20px;
+	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
 }
 
 .coursesubheading {
@@ -77,10 +81,15 @@ body {
 	color: white;
 }
 
+.padding {
+	background-color: #ff9999;
+	padding: 40px;
+}
+
 .studentprojects {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-	background-color: #E6E6FA;
+	background-color: #ff9999;
 	padding: 20px;
 	grid-gap: 20px;
 	justify-items: center;
@@ -131,6 +140,8 @@ body {
 	grid-template-columns: 4;
 }
 
+/* Meet the Teachers */
+
 .teachers {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
@@ -139,10 +150,17 @@ body {
 	padding: 20px;
 }
 
+.box {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+}
+
 .teachname{
 	text-align: center;
 	font-size: 20px;
-	padding: 10ps;
+	padding: 10px;
+	border-bottom: 2px solid black;
 }
 
 .teachertemplate {
@@ -172,6 +190,7 @@ body {
 .teacherpic {
 	width: 100%;
 	height: 100%;
+	justify-content: stretch;
 }
 
 .miniheading {
@@ -179,6 +198,7 @@ body {
 	font-size: 25px;
 	grid-column: 1 / -1;
 	padding: 10px;
+	
 }
 
 .ON {
