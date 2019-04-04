@@ -1,8 +1,17 @@
+body {
+	font-family: arial;
+	margin:0;
+	padding:0;
+}
+
 /* Navbar */
 
 .navbar {
   display: flex;
   background-color: #333;
+  position: fixed;
+  width: 100%;
+  top:0;
 }
 
 .navbar a {
@@ -34,8 +43,8 @@
 
 .mainheading {
 	display: flex;
-	background-color: blue;
-	height: 500px;
+	background-color: #FFCC99;
+	height: 350px;
 	width: 100%;
 	font-size: 80px;
 	justify-content: center;
@@ -68,21 +77,21 @@ content: "";
 display: block;
 position: absolute;
 z-index: -2;
-opacity: 0.4;
+opacity: 0.3;
 width: 100%;
 height: 700px;
 }
 
 .summary {
 	text-align: center;
-	font-size: 50px;
+	font-size: 30px;
 	margin: 50px;
 }
 
 /* Box Code */
 
 .box {
-	display: flex;
+	display: inline;
 	flex-template-columns: 1fr;
 	flex-direction: column;
 	margin: 30px;
@@ -91,17 +100,17 @@ height: 700px;
 	opacity: 0.8;
 }
 
-/* Rest of Code */
+/* Learn More */
 
 
 .learnmore {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 	grid-auto-rows: auto;
-	background-color: #003399;
+	background-color: #99CCFF;
 	padding: 100px;
 	grid-gap: 20px;
-	justify-content: center;
+	justify-items: center;
 	align-items: center;
 }
 
@@ -110,8 +119,9 @@ height: 700px;
 	background-color: white;
 	border-radius: 20px;
 	padding: 20px;
-	font-size: 40px;
-	justify-content: center;
+	font-size: 30px;
+	width: 10em;
+	height: 1em;
 	align-items: center;
 	font-family: Itim;
 	flex-direction: column;
@@ -130,9 +140,9 @@ height: 700px;
 }
 
 .button {
-  background-color: #3366cc;
+  background-color: #CCFFFF;
   border: solid black 3px;
-  color: white;
+  color: black;
   padding: 25px 70px;
   text-align: center;
   text-decoration: none;
@@ -148,7 +158,44 @@ height: 700px;
 .normtwo {
 	flex-grow: 1;
 	text-decoration: none;
-	color: white;
+	color: black;
+}
+
+/* Grid Flexible Formatting */
+
+@media screen and (max-width: 1230px) {
+	.learnmore {
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+	}
+	.course {
+		padding: 20px;
+		width: 600px;
+	}
+	.buttonclass {
+		padding: 20px;
+		width: 300px;
+	}
+
+  #a {
+  order: 1;
+  }
+  #b {
+  order: 3;
+  }
+  #c {
+  order: 5;
+  }
+  #d {
+  order: 2;
+  }
+  #e {
+  order: 4;
+  }
+  #f {
+  order: 6;
+  }
 }
 
 .ON {
