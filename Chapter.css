@@ -1,8 +1,15 @@
+body {
+	font-family: arial;
+}
+
 /* Navbar */
 
 .navbar {
   display: flex;
   background-color: #333;
+  position: fixed;
+  width: 100%;
+  top:0;
 }
 
 .navbar a {
@@ -22,6 +29,7 @@
     flex-direction: column;
   }
 }
+
 .norm {
 	flex-grow: 1;
 	text-decoration: none;
@@ -45,7 +53,6 @@
 	flex-direction: column;
 }
 
-
 .mainheading::before {
 background-image: url("olathenorth.png");
 background-attachment: fixed;
@@ -67,6 +74,7 @@ height: 500px;
 	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
 	opacity: 1;
 	font-weight: bolder;
+	font-family: Arial, sans-serif;
 }
 
 .motto {
@@ -95,29 +103,34 @@ height: 500px;
   padding: 20px;
 }
 
+/* Heading Flex Code */
+
 .headingflex {
-	display: flex;
+	display: grid;
+	justify-content: stretch;
+	grid-template-columns: 2fr 5fr;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
   .row, .headingflex {   
-    flex-direction: column;
+    display: flex;
+	flex-direction: column;
   }
 }
 
+.pic {
+}
+
 .logo {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	padding-right: 20px;
-	margin: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .body {
-	display: flex;
-	font-size: 18px;
+	font-size: 17px;
 	padding: 0px;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -129,7 +142,7 @@ height: 500px;
 	align-items: left;
 }
 
-/* */
+/* Logo and Creed */
 
 
 .tsainfo {
@@ -146,7 +159,7 @@ height: 500px;
 }
 
 .labeltitle {
-	font-size: 40px;
+	font-size: 50px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-family: Gabriola;
@@ -155,7 +168,31 @@ height: 500px;
 .missionstatement {
 	padding-right: 20px;
 	padding-left: 20px;
+}
 
+.mstext {
+	font-size: 25px;
+}
+
+/* Learn More Section */
+
+@media screen and (max-width: 76em) {
+  #a, #b, #c, #d {   
+	display: flex;
+	flex-direction: column;
+  }
+  #a {
+  order: 1;
+  }
+  #b {
+  order: 2;
+  }
+  #c {
+  order: 3;
+  }
+  #d {
+  order: 4;
+  }
 }
 
 .learnmore {
@@ -176,6 +213,7 @@ height: 500px;
 	padding: 10px;
 	font-size: 40px;
 	justify-content: center;
+	align-items: center;
 	font-family: Itim;
 }	
 
@@ -191,7 +229,7 @@ height: 500px;
 }
 
 .button {
-  background-color: #3366cc;
+  background-color: #6699FF;
   border: solid black 3px;
   color: white;
   padding: 25px 70px;
@@ -211,6 +249,8 @@ height: 500px;
 	text-decoration: none;
 	color: white;
 }
+
+/* Footer Code */
 
 .ON {
 	display: flex;
@@ -244,7 +284,6 @@ height: 500px;
 
 .box {
 	display: flex;
-	flex-template-columns: 1fr;
 	flex-direction: column;
 	margin: 30px;
 	background-color: #ffffff;
@@ -253,7 +292,7 @@ height: 500px;
 }
 
 .ONTSA::before {
-background-image: url("olathenorth.png");
+background-image: url("on.jpg");
 background-attachment: fixed;
 background-size: cover;
 content: "";
