@@ -1,8 +1,15 @@
+body {
+	font-family: arial;
+}
+
 /* Navbar */
 
 .navbar {
   display: flex;
   background-color: #333;
+  position: fixed;
+  width: 100%;
+  top:0;
 }
 
 .navbar a {
@@ -54,7 +61,7 @@
 
 
 .mainheading::before {
-background-image: url("olathenorth.png");
+background-image: url("compheading.jpg");
 background-attachment: fixed;
 background-size: cover;
 content: "";
@@ -66,7 +73,7 @@ width: 100%;
 height: 500px;
 }
 
-/* Rest of Code */
+/* Heading */
 
 body {
 	font-family: arial;
@@ -75,11 +82,18 @@ body {
 
 .miniheading {
 	text-align: center;
-	padding: 20px;
-	font-size: 60px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 70px;
 	grid-column: 1 / -1;
 	font-family: Gabriola;
 	
+}
+
+.item {
+	font-size: 30px;
+	padding: 15px;
 }
 
 .heading {
@@ -91,7 +105,7 @@ body {
 	position: relative;
 	align-items: center;
 	justify-content: center;
-	font-size: 100px;
+	font-size: 70px;
 	flex-direction: column;
 	color:	white;
 	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
@@ -102,7 +116,7 @@ body {
 }
 
 .heading::before {
-background-image: url("olathenorth.png");
+background-image: url("activitypic.jpg");
 background-attachment: fixed;
 background-size: cover;
 content: "";
@@ -114,10 +128,12 @@ width: 100%;
 height: 200px;
 }
 
+/* Calendar */
+
 .calendar {
 	display: flex;
-	padding: 100px;
-	background-image: linear-gradient(to right, #CCFFFF, #FFFFFF);
+	padding: 90px;
+	background-color: #66CCFF;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -128,33 +144,28 @@ height: 200px;
 	display: flex;
 	flex-template-columns: 1fr;
 	flex-direction: column;
-	padding: 30px;
+	padding: 50px;
 	border: 3px dashed black;
 	border-style: dotted;
 }
+
+/* Grid */
 
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 	grid-auto-rows: auto;
 	justify-items: center;
-	background-image: linear-gradient(to right, );
-	background-color: #40E0D0
-}
-
-
-.item {
-	font-size: 23px;
+	background-image: linear-gradient(to right, #CCFFFF, #FFFFFF);
 }
 
 .comp {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: stretch;
 	align-items: center;
 	padding: 40px;
-	align-content: space-between;
-
+	align-content: stretch;
 }
 
 .minititle {
@@ -166,7 +177,14 @@ height: 200px;
 
 .desc {
 	font-size: 30px;
-	padding: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 25px;
+	text-align: center;
+}
+
+#kansas {
+	font-size: 25px;
 }
 
 .picture {
@@ -174,28 +192,82 @@ height: 200px;
   height: auto;
 }
 
+/* Grid Flex Formatting */
+@media screen and (max-width: 62em) {
+  #a, #b, #c, #d {   
+	display: flex;
+	flex-direction: column;
+  }
+  #a {
+  order: 1;
+  }
+  #b {
+  order: 2;
+  }
+  #c {
+  order: 4;
+  }
+  #d {
+  order: 3;
+  }
+}
+/* LIT Info */
+
 .lit {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-	grid-auto-rows: auto;
-	justify-items: center;
-	background-color: #003399;
-	padding: 20px;
+	display: flex;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-weight: bolder;
+	text-align: center;
+	vertical-align: center;
+}
+
+.lit::before {
+background-image: url("litthree.jpg");
+background-attachment: fixed;
+background-size: cover;
+content: "";
+display: block;
+position: absolute;
+z-index: -2;
+opacity: 0.4;
+width: 100%;
+height: 500px;
+content-align: bottom;
 }
 
 .litheading {
 	text-align: center;
 	font-size: 40px;
-	grid-column: 1 / -1;
 	color: white;
 	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
 	padding: 20px;
+	font-family: Arial Narrow, sans-serif;
 }
 
-.litdesc {
+#litdesc {
 	font-size: 25px;
 	padding: 10px;
+	color: black;
+	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
 	color: white;
+	opacity: 1;
+}
+
+/* Box Code */
+
+.box {
+	display: flex;
+	flex-template-columns: 1fr;
+	flex-direction: column;
+	margin: 30px;
+	background-color: #212F3D;
+	border: 1px solid black;
+	opacity: 0.8;
 }
 
 .ON {
