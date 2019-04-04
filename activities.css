@@ -65,7 +65,7 @@ body {
 
 
 .mainheading::before {
-background-image: url("compheading.jpg");
+background-image: url("compheading.JPG");
 background-attachment: fixed;
 background-size: cover;
 content: "";
@@ -121,7 +121,7 @@ body {
 }
 
 .heading::before {
-background-image: url("activitypic.jpg");
+background-image: url("activitypic.JPG");
 background-attachment: fixed;
 background-size: cover;
 content: "";
