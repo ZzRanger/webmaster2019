@@ -1,5 +1,7 @@
 body {
 	font-family: arial;
+	margin: 0;
+	padding: 0;
 }
 
 /* Navbar */
@@ -10,6 +12,7 @@ body {
   position: fixed;
   width: 100%;
   top:0;
+  z-index: 1;
 }
 
 .navbar a {
@@ -57,6 +60,7 @@ body {
 	font-weight: bolder;
 	text-align: center;
 	vertical-align: center;
+	z-index: -1;
 }
 
 
@@ -88,6 +92,7 @@ body {
 	font-size: 70px;
 	grid-column: 1 / -1;
 	font-family: Gabriola;
+	z-index: -1;
 	
 }
 
