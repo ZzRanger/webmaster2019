@@ -60,7 +60,7 @@ font-family: cambria;
 text-align:center;	
 }
 .slide-container{
-	max-width: 75%;
+	max-width: 100%;
 	margin-left: auto;
 	margin-right:auto;
 	animation: fading 10s infinite;
@@ -69,9 +69,8 @@ text-align:center;
 }
 
 .slides{
-display:block;
-margin-left:auto;
-margin-right:auto;
+ margin: 0px auto;
+text-align: center;
 }
 
 .fade{
