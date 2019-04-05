@@ -81,10 +81,6 @@
     -moz-animation-fill-mode: forwards;
 }
 /* css3 delays */
-.item:nth-child(1), .item:nth-child(1) div {
-    -webkit-animation-delay: 0s;
-    -moz-animation-delay: 0s;
-}
 .item:nth-child(2), .item:nth-child(2) div {
     -webkit-animation-delay: 6.0s;
     -moz-animation-delay: 6.0s;
@@ -97,11 +93,11 @@
     -webkit-animation-delay: 18.0s;
     -moz-animation-delay: 18.0s;
 }
-.item:nth-child(6), .item:nth-child(6) div {
+.item:nth-child(5), .item:nth-child(5) div {
     -webkit-animation-delay: 24.0s;
     -moz-animation-delay: 24.0s;
 }
-.item:nth-child(8), .item:nth-child(8) div {
+.item:nth-child(6), .item:nth-child(6) div {
     -webkit-animation-delay: 30.0s;
     -moz-animation-delay: 30.0s;
 }
