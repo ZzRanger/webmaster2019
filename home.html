@@ -22,25 +22,16 @@
 * {
   box-sizing: border-box;
 }
-
 /* Style the body */
 body {
   font-family: "times new roman";
   margin: 0;
+ color: black;
 }
-
-
-/* Style the top navigation bar */
-.navbar {
-  display: flex;
-  background-color: #333;
-}
-
 /* Column container */
 .row {  
   display: flex;
   flex-direction:row;
-  
 }
 
 .column {
@@ -48,48 +39,31 @@ body {
 	flex-direction: column;
 }
 	
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
 
 /* Fake image, just for this example */
 .fakeimg {
   background-color: #aaa;
   width: 100%;
 }
-
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
 }
-
-.mySlides {display:none;
-	align-items: center;}
+.mySlides {
+display:none;
+margin: 0 auto;
+}
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 100%) {
   .row, .navbar {   
     flex-direction: column;
   }
-
 </style>
 </head>
 <body>
-
-
 <!-- Navigation Bar -->
 <div class="navbar">
   <a href="home.html">SHU</a> 
@@ -100,13 +74,10 @@ body {
  
   <a href="index.html">Chapter </a>
 </div>
-
 <!-- The flexible grid (content) -->
-
 <div class="fakeimg" style="height:650px;">
 <div class="slides fade">
 	<div class="column">
-
 	<div class="w3-content w3-section" style="max-width:500px">
 		<img class="mySlides" src="album.png" style="width:100%" >
 		<img class="mySlides" src="text.png" style="width:100%" >
@@ -122,19 +93,12 @@ body {
 	
 	
 <div id="about">
-	<h1>About SHU</h1>
-
+	<div class="name"><h1>About SHU</h1></div>
 <div class="row">
-<div class="word"><p>An electrifying performer and world renowned composer, Japanese piano virtuoso S |/| U was born in Britain on December 13th, 1991 to Japanese immigrants. Though parental pressure led her to start learning the piano at the tender age of 4, the ebullient passion she now has did not truly ignite until the age of 15. She attended The Royal College of Music at the age of 16 and has studied under the likes of Dmitri Alexeev and Jianing Kong. S |/| U first made a name for herself at the age of 20, becoming a semi-finalist at the Frederic chopin International Piano Competition. She released her first album later that year.  
-
-She is now an accomplished soloist decorated in accodates, with career highlights including Billboard Top 10 Classical Music in 2016 and finalist for The Leeds International Piano Competition in 2015.
-
+<div class="word"><p>An electrifying performer and world renowned composer, Japanese piano virtuoso SHU was born in Britain on December 13th, 1991 to Japanese immigrants. Though parental pressure led her to start learning the piano at the tender age of 4, the ebullient passion she now has did not truly ignite until the age of 15. She attended The Royal College of Music at the age of 16 and has studied under the likes of Dmitri Alexeev and Jianing Kong. SHU first made a name for herself at the age of 20, becoming a semi-finalist at the Frederic chopin International Piano Competition. She released her first album later that year. She is now an accomplished soloist decorated in accodates, with career highlights including Billboard Top 10 Classical Music in 2016 and finalist for The Leeds International Piano Competition in 2015.
 Aside from her prowess as a performer, she is famous amongst piano fans for the ability to close her eyes and fiddle with notes until she produces a melody she fancies while creating a new piece. 
-
-Her performing repertoire is mainly comprised of classical music from the greats like Rachmaninoff & Chopin, but as of late she has begun to compose her own music in the contemporary genre (We should change the genre) and will be releasing some self composed pieces on her new album. If you want to see this stunning pianist in person, you can catch S |/| U on her first world tour called Blossoming. 
-
+Her performing repertoire is mainly comprised of classical music from the greats like Rachmaninoff & Chopin, but as of late she has begun to compose her own music in the contemporary genre and will be releasing some self composed pieces on her new album. If you want to see this stunning pianist in person, you can catch S |/| U on her first world tour called Blossoming. 
 	</p></div>
-
 <div class="row">
 	<img class= "bio" src="bio.png">
 </div>
@@ -142,7 +106,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	</div>
 	
 	<div id="music">
-	<h1>Music</h1>
+	<div class="name2"><h1>Music</h1></div>
 		<div class="row">
 			<img class="album" src="umbrella.png">
 			<ul>
@@ -183,7 +147,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 		</div>
 	</div>
 	<div>
-	<h1>Tour Dates</h1>
+	<div class="name3"><h1>Tour Dates</h1></div>
 <table id="tour">
     <tr>
       <th>Dates</th>
@@ -198,7 +162,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Vancouver, Canada</td>
       <td>Sold Out</td>
     </tr>
-
     <tr>
       <td class="box">March 18</td>
       <td>Royce Hall</td>
@@ -207,7 +170,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         Sold Out
       </td>
     </tr>
-
     <tr>
       <td class="box">March 29</td>
       <td>Sympony Center</td>
@@ -217,7 +179,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">April 6</td>
       <td>Teatro Colon</td>
@@ -227,7 +188,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">April 18</td>
       <td>Teatro Municipal</td>
@@ -237,7 +197,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">May 6</td>
       <td>Royal Festival Hall</td>
@@ -247,7 +206,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
        <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">May 17</td>
       <td>Berliner Philharmonie</td>
@@ -257,7 +215,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
        <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">May 31</td>
       <td>Musiikkitalo</td>
@@ -267,7 +224,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">June 11</td>
       <td>Thailand Cultural Center</td>
@@ -277,7 +233,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">June 21</td>
       <td>Beijing Gold Sail Concert Hall</td>
@@ -287,7 +242,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">July 5</td>
       <td>Taipei National Theater and Concert Hall</td>
@@ -297,7 +251,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">July 17</td>
       <td>Seoul Arts Center</td>
@@ -307,7 +260,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">August 2</td>
       <td>New National Theatre</td>
@@ -317,7 +269,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">August 10</td>
       <td>Kyoto Concert Hall</td>
@@ -327,7 +278,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
     <tr>
       <td class="box">August 25</td>
       <td>Syndey Opera House</td>
@@ -337,14 +287,12 @@ Her performing repertoire is mainly comprised of classical music from the greats
         <button type = "button"> VIP </button>
       </td>
     </tr>
-
   </table>	
 	
  
 <script>
 var myIndex = 0;
 carousel();
-
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
