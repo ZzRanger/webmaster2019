@@ -159,9 +159,9 @@ body {
 
 .teachname{
 	text-align: center;
-	font-size: 20px;
+	font-size: 25px;
 	padding: 10px;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
 }
 
 .teachertemplate {
@@ -186,6 +186,13 @@ body {
 
 .desc {
 	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.email {
+	text-align: center;
+	border-top: 1px solid black;
 }
 
 .teacherpic {
