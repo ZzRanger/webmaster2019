@@ -1,6 +1,16 @@
+#accom{
+	border: solid black;
+	background-color: "sky blue";
+	border-radius: 25%;
+	
+}
 .word{
 word-wrap: break;
   flex: 70%;
+  line-height: 30px;
+  font-size: 20px;
+  font-size-adjust: .58;
+  margin: 0 15px 0 17px;
 }
 
 .bio{
