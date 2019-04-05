@@ -27,11 +27,13 @@ body {
   color: black;
 }
 
+/* 
 @media screen and (max-width: 700px) {
   .row, .navbar {   
     flex-direction: column;
   }
 }
+*/
 .norm {
 	flex-grow: 1;
 }
@@ -105,11 +107,14 @@ height: 700px;
 
 /* Learn More */
 
-
+@media screen and (min-width: 1230px) {
+	.learnmore {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-rows: auto;
+	}
+}
 .learnmore {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-	grid-auto-rows: auto;
 	background-color: #99CCFF;
 	padding: 100px;
 	grid-gap: 20px;
