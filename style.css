@@ -1,7 +1,8 @@
-body{
-  color: blue;
-  padding: 2em;
-  background-color: #F9E357;
+body {
+  font-family: "times new roman";
+  margin: 0;
+ color: black;
+ background-image: linear-gradient(#FFFF66, #3333FF, #6699FF);
 }
 
 button{
@@ -9,43 +10,32 @@ button{
 	font-family: "segoe script";
 	border-radius: 25%;
 }
-
 ul{
 	margin:10em 5em 5em;
 	padding:1em;
 	
 }
+
 #tour{
 	padding: 1em;
 	font-family: "segoe script";
 	color: black;
 }
 
-
+table{
+	border-spacing: 20px;
+}
 .box{
 	border: 1px solid black;
 	padding: 1em;
 	margin: .5em;
+	background: white;
+	opacity: .5;
 }
 .album{
 	width: 450px;
 	height: 450px;
 	margin:.5em;
-}
-
-
-.header{
-	width: 100%;
-	/*height: 130px;*/
-	text-align: center;
-	padding: 0;
-}
-
-.line{
-	transform: rotate(-10deg);
-	background-image: linear-gradient(red, blue);
-	background-size: 20px 100%;
-	position: float;
 }
 
 .main{
@@ -54,25 +44,41 @@ ul{
 	color: blue;
 	text-align:right;
 }
+
+.name{
+	display:box;
+	border: dotted #48A3E7;
+	background-color: #48A3E7;
+	color:white;
+	width: 100%;
+	height: 75px;
+	text-align:center;
+	margin: 0 0 20px 0;
+}
 .page{
-color: black;
+color: grey;
 font-family: cambria;	
 text-align:center;	
 }
 
-.slide-container{
-	max-width: 100%;
-	margin-left: auto;
-	margin-right:auto;
-	animation: fading 10s infinite;
-	
-	
+/*slide show css*/
+
+.mySlides {
+display:none;
+margin: 0 10px auto;
+max-width: 75%;
+height: 500px;
+padding: 20px;
 }
 
-.slides{
- margin: 0px auto;
-text-align: center;
+.slide-container{
+	max-width: 100%;
+	animation: fading 10s infinite;
+	margin: 0px auto;
+	text-align: center;
+	height: 500px;
 }
+
 
 .fade{
 	animation-iteration-count: 1;
@@ -95,6 +101,8 @@ text-align: center;
   }
 }
 
+
+/* Nav Bar */
 a:hover{
 	background: #00000;	
 	}
@@ -106,7 +114,6 @@ a:hover{
   top:0;
   width:100%;
   z-index: 1;
-  
 }
 .navbar a {
   color: white;
@@ -130,3 +137,39 @@ a:hover{
 .space {
 	flex-grow: 5;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+}
+/* Column container */
+.row {  
+  display: flex;
+  flex-direction:row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+	
+
+/* background*/
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 100%) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
