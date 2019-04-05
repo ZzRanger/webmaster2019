@@ -57,7 +57,7 @@ body {
 
 
 .mainheading::before {
-background-image: url("history.jpg");
+background-image: url("history.JPG");
 background-attachment: fixed;
 background-size: cover;
 content: "";
