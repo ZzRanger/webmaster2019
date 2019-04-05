@@ -37,7 +37,11 @@ body{
 margin: 30px;
 width: 400px;
 height:400px;
+transition: transform .2s;
+}
 
+.image:hover{
+  transform: scale(1.5); 
 }
 a{
 color: white;
