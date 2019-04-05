@@ -191,8 +191,8 @@ height: 500px;
 
 .slides {
 	display: flex;
-	height: 400px;
-	width: 600px;
+	height: 600px;
+	width: 400px;
 	flex-direction: column;
     overflow:hidden;
 	border: 1px solid black;
@@ -275,6 +275,14 @@ height: 500px;
     -webkit-animation-delay: 18.0s;
     -moz-animation-delay: 18.0s;
 }
+.item:nth-child(5), .item:nth-child(5) div {
+    -webkit-animation-delay: 24.0s;
+    -moz-animation-delay: 24.0s;
+}
+.item:nth-child(6), .item:nth-child(6) div {
+    -webkit-animation-delay: 30.0s;
+    -moz-animation-delay: 30.0s;
+}
 
 /* keyframes #anim_titles */
 @-webkit-keyframes anim_titles {
@@ -332,7 +340,8 @@ height: 500px;
     padding:20px;
     position:absolute;
     top:80%;
-    width:450px;
+	left: 0%;
+    width: 300px;
 	height: auto;
 	text-align: center;
     /* css3 animation */
