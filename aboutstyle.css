@@ -8,10 +8,10 @@
 word-wrap: break;
   flex: 70%;
   line-height: 20px;
-  font-size: 5vw;
+  font-size: 20px;
   margin: 0 15px 0 17px;
+  overflow:hidden;
 }
-
 .bio{
 border-radius: 25%;
   flex:30%;
@@ -23,4 +23,5 @@ border-radius: 25%;
 	.bio{
 		width:75%;
 		
-	
+	}
+}
