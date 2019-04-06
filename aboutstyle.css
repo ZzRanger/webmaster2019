@@ -7,7 +7,7 @@
 .word{
 word-wrap: break;
   flex: 70%;
-  line-height: 20px;
+  line-height: 30px;
   font-size: 10vw;
   margin: 0 15px 0 17px;
   overflow:hidden;
