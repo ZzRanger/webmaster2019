@@ -8,7 +8,7 @@
 word-wrap: break;
   flex: 70%;
   line-height: 20px;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 15px 0 17px;
   overflow:hidden;
 }
@@ -19,11 +19,11 @@ border-radius: 25%;
   height:75%;
 }
 
-@media only screen and(max-width:750px){
+/*@media only screen and(max-width:750px){
 	#about{
 		Display: grid; 
 grid-template-columns: 1fr;
 Justify-content: center;
 Align-items: center;
 	}
-}
+}*/
