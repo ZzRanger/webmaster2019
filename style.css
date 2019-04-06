@@ -57,8 +57,6 @@ table{
 	text-align:center;
 	margin: 0 0 20px 0;
 	padding: 10px 0 15px 0;
-	
-
 }
 .page{
 color: grey;
@@ -91,13 +89,11 @@ background-color: #F4D03F;
 	height: 500px;
 }
 
-@media only screen and (max-width:750px) {
-  /* For mobile phones: */
-  .slide-container, .name, .back {
-    width: 100%;
+@media only screen and (max-width: 750px) {
+  .slide-container, .name {   
+    width:100%;
   }
 }
-
 .fade{
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
