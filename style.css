@@ -91,6 +91,12 @@ background-color: #F4D03F;
 	height: 500px;
 }
 
+@media only screen and (max-width:750px) {
+  /* For mobile phones: */
+  .slide-container, .name, .back {
+    width: 100%;
+  }
+}
 
 .fade{
 	animation-iteration-count: 1;
