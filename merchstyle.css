@@ -4,6 +4,10 @@ body{
 	background-repeat: repeat;
 
 }
+
+button{
+	text-align:center;
+}
 #merch{
 	display: flex;
 	align-items: center;
