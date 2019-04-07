@@ -93,7 +93,7 @@
     -webkit-animation-delay: 18.0s;
     -moz-animation-delay: 18.0s;
 }
-
+/* 
 .item:nth-child(5), .item:nth-child(5) div {
     -webkit-animation-delay: 24.0s;
     -moz-animation-delay: 24.0s;
@@ -102,6 +102,8 @@
     -webkit-animation-delay: 30.0s;
     -moz-animation-delay: 30.0s;
 }
+*/
+
 /*
 .item:nth-child(7), .item:nth-child(7) div {
     -webkit-animation-delay: 36.0s;
@@ -116,6 +118,7 @@
     -moz-animation-delay: 48.0s;
 }
 */
+
 /* keyframes #anim_titles */
 @-webkit-keyframes anim_titles {
     0% {
@@ -167,11 +170,11 @@
     border-radius:10px 10px 10px 10px;
     box-shadow:0 0 5px #FFFFFF inset;
     color:#FFFFFF;
-    font-size:20px;
+    font-size:15px;
     margin:0 auto;
-    padding:20px;
+    padding:30px;
     position:absolute;
-    top:80%;
+    top:70%;
     width:450px;
 	height: auto;
 	text-align: center;
