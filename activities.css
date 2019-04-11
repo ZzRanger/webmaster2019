@@ -60,7 +60,7 @@ body {
 	font-weight: bolder;
 	text-align: center;
 	vertical-align: center;
-	z-index: 1;
+	z-index: 0;
 }
 
 .text {
