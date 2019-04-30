@@ -65,18 +65,8 @@ text-align:center;
 }
 
 /*Music Description*/
-.centered {
-visibility: visible;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
 
-.centered a:hover{
-	visibility: visible;
-	background: black;
-	opacity: 50%;
+
 /*slide show css*/
 
 .mySlides {
