@@ -3,8 +3,10 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="aboutstyle.css">
+  <link rel="stylesheet" href="aboutstyle.css">	
+  <link rel="stylesheet" href="ticketstyle.css">	
   <script src="script.js"></script>
+  <script scr="ticket.js"></script>
   <link href="index.html" rel="stylesheet" media="print">
   <link href="about.html" rel="stylesheet" media="print">
   <link href="home.html" rel="stylesheet" media="print">
@@ -198,7 +200,74 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Sympony Center</td>
       <td>Chicago, Illinois</td>
       <td>
-      <button type="button">Tickets</button>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content" action="/action_page.php">
+  
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <div class="container">
+    <h1 class="title">Tickets</h1>
+
+	<label for="type"><b> Ticket Type</b></label><br>
+	<input type="radio" name="ticket">Front Rows $30
+	<input type="radio" name="ticket">Middle Rows $25
+	<input type="radio" name="ticket">Top Rows $20
+	
+	
+<br><br>
+	<label for="name"><b>Full Name</b></label>
+    <input type="text" placeholder="John M. Doe" name="name" required>
+	
+    <label for="email"><b>Email Address</label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+<h1 class="title"> Credit Card</h1>
+    <label for="cc"><b>Name on Card</b></label>
+    <input type="text" placeholder="Enter Name" name="psw" required>
+	
+	<label for="cn"><b>Credit Card Number</b></label>
+    <input type="text" placeholder="1111-2222-3333-4444" name="number" required>
+	
+	<label for="cn"><b>Exp Date</b></label><br>
+    <select>
+		<option value="Jan">1</option>
+		<option value="Feb">2</option>
+		<option value="Mar">3</option>
+		<option value="Apr">4</option>
+		<option value="May">5</option>
+		<option value="Jun">6</option>
+		<option value="Jul">7</option>
+		<option value="Aug">8</option>
+		<option value="Sep">9</option>
+		<option value="Oct">10</option>
+		<option value="Nov">11</option>
+		<option value="Dec">12</option>
+	
+	</select>
+	
+	<select>
+		<option value="0">2020</option>
+		<option value="1">2021</option>
+		<option value="2">2022</option>
+		<option value="3">2023</option>
+		<option value="4">2024</option>
+		<option value="5">2025</option>
+		<option value="6">2026</option>
+		<option value="7">2027</option>
+		<option value="8">2028</option>
+		<option value="9">2029</option>
+		<option value="10">2030</option>
+	</select>
+	
+<br>
+    <button type="submit" class="end">Purchase</button>
+    <button type="button" class="end" onclick="closeForm()">Close</button>
+ 
+     </div>
+    </form>
+  </div>
         <button type = "button"> VIP </button>
       </td>
     </tr>
