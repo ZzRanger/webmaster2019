@@ -61,7 +61,8 @@ table{
 .page{
 color: grey;
 font-family: cambria;	
-text-align:center;	
+text-align:center;
+font-size: 35px;
 }
 
 /*Music Description*/
