@@ -9,3 +9,18 @@ window.onclick = function(event) {
 
 function closeForm() {
   document.getElementById("id01").style.display = "none";
+}
+
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function closeForm() {
+  document.getElementById("id02").style.display = "none";
+}
+
