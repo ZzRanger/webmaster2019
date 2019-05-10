@@ -42,11 +42,13 @@ button{
 margin: 30px;
 width: 400px;
 height:400px;
+border: solid black 10px;
 transition: transform .2s;
 }
 
 .image:hover{
-  transform: scale(1.5); 
+  transform: scale(1.5);
+border: 0px;
 }
 a{
 color: white;
