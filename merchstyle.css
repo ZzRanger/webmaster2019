@@ -20,6 +20,7 @@ button{
 	width: 400px;
 	height: 400px;
 	position: relative;
+	border: solid black 10px;
 }
 
 .click{
