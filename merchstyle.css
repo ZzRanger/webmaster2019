@@ -66,3 +66,49 @@ a:hover{
 #info{
 	font-size: 20px;
 	color: black;
+	
+	/*navbar*/
+	
+	a:hover{
+	background: #00000;	
+	}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index: 1;
+}
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  top:0;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+@media screen and (max-width: 750px) {
+  .row, .navbar {   
+    Display: grid; 
+grid-template-columns: 1fr;
+Justify-content: center;
+Align-items: center;
+  }
+}
+.norm {
+	flex-grow: 1;
+}
+.space {
+	flex-grow: 5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+}
