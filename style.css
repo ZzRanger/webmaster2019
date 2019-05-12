@@ -85,6 +85,7 @@ left:8px;
 .text-container {
   position: relative;
   width: 50%;
+  margin:0;
 }
 .text {
   color: black;
