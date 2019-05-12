@@ -26,6 +26,10 @@ table{
 	border-spacing: 20px;
 	margin: 0 auto;
 }
+
+td{
+	text-align:center;
+}
 .box{
 	border: 1px solid black;
 	padding: 1em;
