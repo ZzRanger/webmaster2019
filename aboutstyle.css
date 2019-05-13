@@ -7,11 +7,12 @@
 .word{
 word-wrap: break;
   flex: 60%;
-  line-height: 20px;
+  line-height: 50px;
   font-size: 20px;
   margin: 0 15px 0 17px;
   overflow:hidden;
   width: 50%;
+  vertical-align:middle;
 }
 .bio{
   flex:30%;
