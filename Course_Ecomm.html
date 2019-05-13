@@ -6,22 +6,41 @@
   <link rel="stylesheet" type = "text/css" href="courses.css">
   <link rel ="stylesheet" type = "text/css" href="comslideshow.css">
   <script src="CTE.js"></script>
-  <link href="Chapter.html" rel = "stylesheet" media = "print">
-  <link href="index.html" rel = "stylesheet" media = "print">
+  <link rel="stylesheet" href="navbar.css">
+  <script type="text/javascript" src="navbarjs.js"></script>
+  <script type="text/javascript" src="navbarjstwo.js"></script>
   <title> E - Communication Courses </title>
 </head>
 
 <nav>
   
-  <div class="navbar">
-  <a class = "norm" href="cte.html">CTE</a>
-  <a class = "norm" href="Course_Computers.html">Business/Computer Courses</a>
-  <a class = "norm" href="Course_Ecomm.html">E-Communication Courses</a>
-  <a class = "norm" href="Course_Tech.html">Industry Technology Courses</a>
-  <div class = "space"> </div>
-  <a class = "norm" href="index.html">Chapter</a>
-  <a class = "norm" href="home.html">Design Brief</a>
+  <div class="navbar"> 
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Olathe North Chapter
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="index.html">Chapter Home</a>
+	<a href="Chapter_History.html">Chapter History</a>
+    <a href="Chapter_Activities.html">Chapter Activities</a>
   </div>
+  </div> 
+  
+  <div class="dropdowna">
+  <button class="dropbtna" onclick="Function()">Olathe North CTE
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-contenta" id="aDropdown">
+	<a href = "CTE.html">CTE Home</a>
+	<a href = "Course_Tech.html">Industrial Technology</a>
+	<a href = "Course_Computers.html">Business/Computers</a>
+	<a href = "Course_EComm.html">E-Communications</a>
+  </div>
+  </div> 
+  <div class = "Design">
+  <a href = "home.html">2019 Design Brief</a>
+  </div>
+</div>
   
   </nav>
 
@@ -116,13 +135,15 @@
 	<div class = "box">
 		<img src = "waldron.png" alt = "">
 		<div class = "teachname"> Mrs. Waldron </div>
-		<div class = "desc">
+		<div class = "des">
 		Ms. Waldron has been the digital design teacher at Olathe North for eleven years, 
 		teaching various digital design classes at the school. She currently holds an 
 		Associates Degree in Commerical Art and a Bachelors Degree in Studio Art / Art
 		Education. Prior to Olathe North, Ms. Waldron has taught at Topeka High School 
 		for seven years.  </div>
-		<div class = "email"> mwaldronon@olatheschools.org </div>
+		<div class = "email"> 
+			<a class = "text" href = "mailto:mwaldronon@olatheschools.org"> mwaldronon@olatheschools.org </a>
+		</div>
 	</div>
 	</div>
 	
@@ -130,7 +151,7 @@
 	<div class = "box">
 		<img src = "lane.png" alt = "">
 		<div class = "teachname"> Mr. Lane </div>
-		<div class = "desc">
+		<div class = "des">
 		Mr. Lane is the digital film 
 		teacher at Olathe North. He 
 		holds an undergraduate degree 
@@ -142,21 +163,13 @@
 		Olathe North Productions from 
 		2003 to 2018, and is the Digital 
 		Media Arts department chair. </div>
-		<div class = "email"> jlaneon@olatheschools.org </div>
+		<div class = "email"> 
+			<a class = "text" href = "mailto:jlaneon@olatheschools.org"> jlaneon@olatheschools.org </a> 
+		</div>
 	</div>
 </div>
 </div>
-<div class = "learnmore">
-	<div class = "coursemore" id = "a" href = "Course_Computers.html"> Business & Computers </div>
-	<div class = "coursemore" id = "b" href = "Course_Ecomm.html"> E - Communication </div>
-	<div class = "coursemore" id = "c"href = "Course_Tech.html"> Industry Tech </div>
-	<div class = "buttonclass" id = "d"> 
-		<button class = "button" > <a class = "normtwo" href = "Course_Computers.html"> LEARN MORE </a> </button> </div>
-	<div class = "buttonclass" id = "e"> 
-		<button class = "button"> <a class = "normtwo" href = "Course_Ecomm.html"> LEARN MORE </a> </button> </div>
-	<div class = "buttonclass" id = "f"> 
-		<button class = "button"> <a class = "normtwo" href = "Course_Tech.html"> LEARN MORE </a> </button> </div>
-  </div>
+
   <footer class = "ON">
     <div class = "team"> Olathe North TSA </div>
 	<div class = "copyright"> COPYRIGHT © 2019 </div>
