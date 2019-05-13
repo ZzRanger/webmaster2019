@@ -3,21 +3,41 @@
   <head>
     <link rel = "stylesheet" href = "history.css">
     <script src="Chapter.js"></script>
-    <link href="CTE.html" rel = "stylesheet" media = "print">
-    <link href="home.html" rel = "stylesheet" media = "print">
+    <link rel="stylesheet" href="navbar.css">
+	<script type="text/javascript" src="navbarjs.js"></script>
+	<script type="text/javascript" src="navbarjstwo.js"></script>
 	  <title> Olathe North Chapter History </title>
   </head>
   
   <nav>
   
-  <div class="navbar">
-  <a class = "norm" href="index.html">Chapter</a>
-  <a class = "norm" href="Chapter_Activities.html">Chapter Activities</a>
-  <a class = "norm" href="Chapter_History.html">Chapter History</a>
-  <div class = "space"> </div>
-  <a class = "norm" href="cte.html">CTE</a>
-  <a class = "norm" href="home.html">Design Brief</a>
+  <div class="navbar"> 
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Olathe North Chapter
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="index.html">Chapter Home</a>
+	<a href="Chapter_History.html">Chapter History</a>
+    <a href="Chapter_Activities.html">Chapter Activities</a>
   </div>
+  </div> 
+  
+  <div class="dropdowna">
+  <button class="dropbtna" onclick="Function()">Olathe North CTE
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-contenta" id="aDropdown">
+	<a href = "CTE.html">CTE Home</a>
+	<a href = "Course_Tech.html">Industrial Technology</a>
+	<a href = "Course_Computers.html">Business/Computers</a>
+	<a href = "Course_EComm.html">E-Communications</a>
+  </div>
+  </div> 
+  <div class = "Design">
+  <a href = "home.html">2019 Design Brief</a>
+  </div>
+</div>
   
   </nav>
  
@@ -29,26 +49,40 @@
 		<div class = "minititle"> About Olathe North TSA </div>
 		<div class = "desc">
 			<ul class = "list">
-				<li> Founded in 1998 by Mr. Brittonhart </li>
-				<li> Won numerous state and national awards under Mr. Brittonhart </li>
-				<li> Mr. Wagner became sponser of TSA in after Mr. Brittonhart left Olathe North </li>
+				<li> Founded in 1998 by Mr. Britton Hart </li>
+				<li> Won numerous state and national awards under Mr. Britton Hart </li>
+				<li> Mr. Wagner became sponser of TSA in after Mr. Britton Hart left Olathe North </li>
 				<li> Continues to flourish under Mr. Wagner </li>
 		</div>
 	</div>
-	<div class = "color">
 	<div class = "awardstemplate">
-		<div class = "awardstitle"> Awards </div>
-		<div class = "awardsdesc"> Olathe North has won many awards over the years. Here are some of the recent state awards </div>
+		<div class = "awardstitle"> State Awards </div>
+		<div class = "awardsdesc"> Olathe North has won many awards over the years. Here are Olathe North's 2019 State Awards. </div>
 	</div>
-	<div class = "container">
-<div class="slides">
-    <div class = "content"> <!-- slides -->
+<div class = "color">
+<div class = "container">
+<!-- <div class = "awardtitle"> 2019 Awards </div> -->
+	<div class="slides">
+    <div class = "content"> 
         <div class = "item"><img src="newawarda.jpg" alt="image01" width = "400px" height = "600px"/ >
-            <div class = "words">1st Place Technical Sketching</div>
+            <div class = "words">1st Place Webmaster</div>
         </div>
         <div class = "item"><img src="newawardb.jpg" alt="image02" width = "400px" height = "600px"/>
-            <div class = "words">1st Place Essays in Technology</div>
+            <div class = "words">1st Place Coding</div>
         </div>
+        <div class = "item"><img src= "newawardc.jpg" alt="image03" width = "400px" height = "600px"/>
+           <div class = "words">2nd Place Essays in Technology</div>
+        </div>
+        <div class = "item"><img src= "newawardd.jpg" alt="image04" width = "400px" height = "600px"/>
+            <div class = "words">3rd Place Prepared Presentation</div>
+		</div>
+        </div>
+	</div>
+<!--
+	<div class = "space"> </div>
+<div class = "awardtitle"> 2016 - 2018 Awards </div>
+		<div class="slides">
+		<div class = "content"> 
         <div class = "item"><img src= "newawardc.jpg" alt="image03" width = "400px" height = "600px"/>
            <div class = "words">1st Place Technical Sketching and Application</div>
         </div>
@@ -62,17 +96,10 @@
             <div class = "words">1st Place Manufacturing Prototype </div>
         </div>
         </div>
-	</div>
-	</div>
-	</div>	
-	<div class = "learnmore">
-	<div class = "course" id = "a"> Chapter Activities </div>
-	<div class = "course" id = "c"> Chapter History </div>
-	<div class = "buttonclass" id = "b"> 
-		<button class = "button"> <a class = "normtwo" href = "Chapter_Activities.html"> LEARN MORE </a> </button> </div>
-	<div class = "buttonclass" id = "d"> 
-		<button class = "button"> <a class = "normtwo" href = "Chapter_History.html"> LEARN MORE </a> </button> </div>
-  </div>
+		</div>
+	-->
+</div>
+</div>	
 
 
   <footer class = "ON">
