@@ -3,22 +3,42 @@
   <head>
     <link rel = "stylesheet" href = "activities.css">
     <script src="Chapter.js"></script>
-    <link href="CTE.html" rel = "stylesheet" media = "print">
-    <link href="home.html" rel = "stylesheet" media = "print">
+	<link rel="stylesheet" href="navbar.css">
+	<script type="text/javascript" src="navbarjs.js"></script>
+	<script type="text/javascript" src="navbarjstwo.js"></script>
   </head>
   
   <body>
   
   <nav>
   
-  <div class="navbar">
-  <a class = "norm" href="index.html">Chapter</a>
-  <a class = "norm" href="Chapter_Activities.html">Chapter Activities</a>
-  <a class = "norm" href="Chapter_History.html">Chapter History</a>
-  <div class = "space"> </div>
-  <a class = "norm" href="cte.html">CTE</a>
-  <a class = "norm" href="home.html">Design Brief</a>
+  <div class="navbar"> 
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Olathe North Chapter
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="index.html">Chapter Home</a>
+	<a href="Chapter_History.html">Chapter History</a>
+    <a href="Chapter_Activities.html">Chapter Activities</a>
   </div>
+  </div> 
+  
+  <div class="dropdowna">
+  <button class="dropbtna" onclick="Function()">Olathe North CTE
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-contenta" id="aDropdown">
+	<a href = "CTE.html">CTE Home</a>
+	<a href = "Course_Tech.html">Industrial Technology</a>
+	<a href = "Course_Computers.html">Business/Computers</a>
+	<a href = "Course_EComm.html">E-Communications</a>
+  </div>
+  </div> 
+  <div class = "Design">
+  <a href = "home.html">2019 Design Brief</a>
+  </div>
+</div>
   
 </nav>
   	<div class = "mainheading"> 
@@ -27,33 +47,41 @@
 		<div class = "miniheading"> Yearly Schedule </div>
 		<div class = "border">
 			<div class = "item"> October - Johnson Country's Big Bad Pumpkin Race </div>
-			<div class = "item"> November - Olathe TSA Competition </div>
+			<div class = "item"> November - Olathe TSA Conference </div>
 			<div class = "item"> January - JCCC Competitive Event </div>
-			<div class = "item"> April - State TSA Competition </div>
+			<div class = "item"> April - State TSA Conference </div>
+			<div class = "item"> June / July - National TSA Conference </div>
 		</div>
 		</div>
 	<div class = "heading"> Competitions </div> 
 		<div class = "grid">		
 			<div class = "comp" id = "a"> 
 				<div class = "minititle"> Olathe TSA Conference </div>
-				<div class = "desc"> 
+				<div class = "desc" id = "local"> 
 				The Olathe TSA Conference was held in November of 2018. Half of Olathe North's TSA members participated, with
 				one of our members placing third in Dragster Design. </div>
 			</div>
 			<div class = "comp" id = "b"> <img class = "picture" src = "west.jpg" alt ""> </div>
-			<div class = "comp" id = "c"> <img class = "picture" src = "webster.jpg" alt "" width="1000" height="300"> </div>
+			<div class = "comp" id = "c"> <img class = "resize" src = "kansastsa.jpg" alt "" width="1000" height="300"> </div>
 			<div class = "comp" id = "d">
 				<div class = "minititle"> Kansas State Conference </div>
 				<div class = "desc" id = "kansas"> 
-				This year's Kansas State TSA Conference will be held between April 17th - 19th at Webster Conference Center in Salina, Kansas. 
-				All 6 members will attend the conference, competing in multiple 
-				events and representing the chapter. </div>
+				This year's Kansas State TSA Conference was held during April 17th - 19th at Webster Conference Center in Salina, Kansas. 
+				All 7 members attended the conference, placing in multiple events. </div>
 			</div>
+			<div class = "comp" id = "e">
+				<div class = "minititle"> National TSA Conference </div>
+				<div class = "desc" id = "nats">
+				This year's TSA National Conference will be held between June 28th and July 2nd in Washington D.C. 4 members from Kansas TSA will be
+				present to represent the school and chapter.
+				</div>
+			</div>
+			<div class = "comp" id = "f"> <img class = "resize" src = "realdc.jpg" alt ""> </div>
 		</div>
 		
 			<div class = "lit">
-					<div class = "litheading"> Ladies in Tech [LIT] </div>
 					<div class = "box">
+					<div class = "litheading"> Ladies in Tech [LIT] </div>
 						<div id = "litdesc">
 							Members of Olathe North TSA have gone out of their way to create a programming club at Olathe North called Ladies in Tech,
 							tagetting females that may have an interest in the stem field. Every week, the club meets to improve their programming skills, 
@@ -61,14 +89,6 @@
 						</div>
 					</div>
 			</div>
-	<div class = "learnmore">
-	<div class = "course" id = "a"> Chapter Activities </div>
-	<div class = "course" id = "c"> Chapter History </div>
-	<div class = "buttonclass" id = "b"> 
-		<button class = "button"> <a class = "normtwo" href = "Chapter_Activities.html"> LEARN MORE </a> </button> </div>
-	<div class = "buttonclass" id = "d"> 
-		<button class = "button"> <a class = "normtwo" href = "Chapter_History.html"> LEARN MORE </a> </button> </div>
-  </div>
   
   <footer class = "ON">
     <div class = "team"> Olathe North TSA </div>
