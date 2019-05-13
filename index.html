@@ -4,8 +4,9 @@
   <link rel="stylesheet" type="text/css" href="reset.css"> 
   <link rel="stylesheet" type = "text/css" href="Chapter.css">
   <script src="CTE.js"></script>
-  <link href="Chapter.html" rel = "stylesheet" media = "print">
-  <link href="index.html" rel = "stylesheet" media = "print">
+  <link rel="stylesheet" href="navbar.css">
+  <script type="text/javascript" src="navbarjs.js"></script>
+  <script type="text/javascript" src="navbarjstwo.js"></script>
   <title> Olathe North TSA Chapter </title>
 </head>
 
@@ -13,14 +14,33 @@
 
 <nav>
   
-  <div class="navbar">
-  <a class = "norm" href="index.html">Chapter</a>
-  <a class = "norm" href="Chapter_Activities.html">Chapter Activities</a>
-  <a class = "norm" href="Chapter_History.html">Chapter History</a>
-  <div class = "space"> </div>
-  <a class = "norm" href="cte.html">CTE</a>
-  <a class = "norm" href="home.html">Design Brief</a>
+  <div class="navbar"> 
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Olathe North Chapter
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="index.html">Chapter Home</a>
+	<a href="Chapter_History.html">Chapter History</a>
+    <a href="Chapter_Activities.html">Chapter Activities</a>
   </div>
+  </div> 
+  
+  <div class="dropdowna">
+  <button class="dropbtna" onclick="Function()">Olathe North CTE
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-contenta" id="aDropdown">
+	<a href = "CTE.html">CTE Home</a>
+	<a href = "Course_Tech.html">Industrial Technology</a>
+	<a href = "Course_Computers.html">Business/Computers</a>
+	<a href = "Course_EComm.html">E-Communications</a>
+  </div>
+  </div> 
+  <div class = "Design">
+  <a href = "home.html">2019 Design Brief</a>
+  </div>
+</div>
   
 </nav>
   
@@ -47,10 +67,11 @@
 	</div>
 	</div>
 </div>
+<div class = "stack">
 	<div class = "tsainfo">
 		<div class = "headingtwo"> National TSA Information </div>
 		<div class = "creed">
-			<div class = "labeltitle"> Creed </div>
+			<div class = "labeltitleone"> Creed </div>
 			I believe that Technology Education holds an important place in my life in the technical world. 
 			I believe there is a need for the development of good attitudes concerning work, tools, materials, experimentation, and processes of industry. 
 			Guided by my teachers, artisans from industry, and my own initiative, 
@@ -62,33 +83,22 @@
 			I will make it my goal to do better each day the task before me, and to be steadfast in my belief in my God, and my fellow Americans.
 		</div>
 			<div class = "missionstatement">
-			<div class = "labeltitle"> Mission Statement </div>
+			<div class = "labeltitletwo"> Mission Statement </div>
 			<div class = "mstext">The Technology Student Association fosters personal growth, leadership, and opportunities in Science, Technology, Engineering, and Mathematics (STEM)
 			; members apply and integrate these concepts through co-curricular activities, competitions, and related programs. </div>
-		</div>
-		
+		</div>		
 	</div>
-
+</div>
 <div class = "ONTSA"> 
 	<div class = "box">
 	<div class = "ONTitle"> Olathe North TSA </div>
 		<div class = "ONdescription"> 
 			Olathe North TSA is made up of highly motivated students that love technology. Students select various events to participate in based on their interests and dedicate
-			time outside of school to work on their projects. Being a small club, our chapter is primarily run by our sponser Mr. Wagner. Currently boasting 6 members for the 
-			2018 - 2019 school year, Olathe North TSA will be present at the 2019 Kansas TSA State Conference to compete. 
+			time outside of school to work on their projects. Being a small club, our chapter is primarily run by our sponser Mr. Wagner. Currently boasting 7 members for the 
+			2018 - 2019 school year, Olathe North TSA was present at the 2019 Kansas TSA State Conference and will attend the 2019 National TSA Conference. 
 		</div>
 	</div>
 </div>
-
-<!-- In this section, users can select to view Olathe North Courses -->
-  <div class = "learnmore">
-	<div class = "course" id = "a"> Chapter Activities </div>
-	<div class = "course" id = "c"> Chapter History </div>
-	<div class = "buttonclass" id = "b"> 
-		<button class = "button"> <a class = "normtwo" href = "Chapter_Activities.html"> LEARN MORE </a> </button> </div>
-	<div class = "buttonclass" id = "d"> 
-		<button class = "button"> <a class = "normtwo" href = "Chapter_History.html"> LEARN MORE </a> </button> </div>
-  </div>
    
 <!-- This is the footer section of the document -->
  
