@@ -200,12 +200,12 @@ Align-items: center;
   box-sizing: border-box;
 }
 
-}
 
 .right{
 	
 	text-align:right;
 	position:fixed;
+}
 /* Column container */
 .row {  
   display: flex;
