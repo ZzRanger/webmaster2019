@@ -204,7 +204,8 @@ Align-items: center;
 .right{
 	
 	text-align:left;
-	position:fixed;
+	position:relative;
+	margin: 0 5px 0 5px;
 }
 /* Column container */
 .row {  
