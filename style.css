@@ -203,7 +203,7 @@ Align-items: center;
 
 .right{
 	
-	text-align:right;
+	text-align:left;
 	position:fixed;
 }
 /* Column container */
