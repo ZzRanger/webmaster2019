@@ -5,6 +5,10 @@ body{
 
 }
 
+form{
+	text-align:left;
+	margin: 0 0 0 5px;
+
 button{
 	text-align:center;
 }
