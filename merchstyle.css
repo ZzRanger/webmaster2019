@@ -6,10 +6,6 @@ body{
 }
 
 
-
-button{
-	text-align:center;
-}
 #merch{
 	display: flex;
 	align-items: center;
@@ -24,6 +20,11 @@ button{
 	position: relative;
 	border: solid  10px;
 	border-color: #00008B;
+}
+
+.shirt{
+font-color: #F5EEF8 ;
+font-family:"Brush Script MT", "Freestyle script";
 }
 .name{
 	display:box;
