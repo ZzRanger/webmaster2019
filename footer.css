@@ -1,0 +1,9 @@
+.ON {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	color: black;
+	padding: 20px;
+	background-color: #D3D3D3;
+}
