@@ -6,13 +6,13 @@
   <link rel="stylesheet" href="aboutstyle.css">	
   <link rel="stylesheet" href="ticketstyle.css">	
   <script src="script.js"></script>
-  <script src="ticket.js"></script>
+  <script scr="ticket.js"></script>
   <link href="index.html" rel="stylesheet" media="print">
   <link href="about.html" rel="stylesheet" media="print">
   <link href="home.html" rel="stylesheet" media="print">
   <link href="chapter_history.html" rel="stylesheet" media="print">
   <link href="chapter_officers.html" rel="stylesheet" media="print">
-  <link href="cte.html" rel="stylesheet" media="print">
+  <link href="chapter_activities.html" rel="stylesheet" media="print">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -32,6 +32,7 @@ body {
   display: flex;
   flex-direction:row;
 }
+
 .column {
 	display: flex;
 	flex-direction: column;
@@ -52,6 +53,7 @@ body {
 display:none;
 margin: 0 auto;
 }
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 100%) {
   .row, .navbar {   
@@ -68,12 +70,12 @@ margin: 0 auto;
   <a href="home.html#tour">Tour</a>
   <a href="merch.html">Shop</a>
  
-  <a href="index.html" class="right">Chapter </a>
-  <a href="cte.html" class="right"> CTE </a>
+  <a href="index.html">Chapter </a>
 </div>
 	
 <!-- The flexible grid (content) --> 
 <div class="back" style="height:650px;">
+
 <div class="slide-container">
 	<div class="column">
 		<img class="mySlides" src="album.png" style="width:100%" >
@@ -86,6 +88,7 @@ margin: 0 auto;
 		
 	</div>
 	</div>
+
 	
 <div id="about">
 	<div class="name"><h1>About SHU</h1></div>
@@ -105,16 +108,18 @@ Her performing repertoire is mainly comprised of classical music from the greats
 </div>
 	</div>
 	</div>
-	<div id="music">
+
 		<div class="name"><h1>Music</h1></div>
-			<div class="row">
+		<div class="row">
 				<div class="text-container">
+				<div class ="animate">
 				<img class="album" src="umbrella.png" alt="album cover of Flowering">
 				   <div class="overlay">
 				      <div class="text">Flowering is an album that tells the story of growth in the most unlikely of places.
 					Primarily consisting of romantic pieces, the album captures the blooming hopes of young dreamers
 					through its twinkling piano solos and the addition of a warm cello in a special collaboration.
 				    </div>
+				</div>
 				</div>
 				</div>
 			<ul>
@@ -130,15 +135,17 @@ Her performing repertoire is mainly comprised of classical music from the greats
 		
 		<div class="row">
 			<div class="text-container">
+			<div class = "animate">
 			<img class="album" src="sky.png" alt="album cover of Starry Night">
 			<div class="overlay">
 				<div class="text">
 					Dissonant chords and ominous harmonics clash with the warm undertones
-					of a full orchestra and the chiming of a twinkling piano in what is Shu’s 2nd album! Starry Night 
+					of a full orchestra and the chiming of a twinkling piano in what is Shuâ€™s 2nd album! Starry Night 
 					is a masterpiece calling upon contemporary dabbles of delight that embody heavy and deep emotion.
 					Conceptually driven, the album takes in ideas behind the mystery of the universe,
 					and the dual nature of its beauty and horror that continues to fascinate.
 				</div>
+			</div>
 			</div>
 			</div>
 			<ul>
@@ -155,6 +162,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 				
 		<div class="row">
 		<div class="text-container">
+		<div class = "animate">
 			<img class="album" src="legends.png" alt="album cover of Forgotten Legends">
 			<div class="overlay">
 				<div class="text"> 
@@ -164,6 +172,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 					    Legends is an attempt to recreate and preserve the identity of these valuable stories. 
 					    Shu embodies these legends through passionate classical pieces.
 				</div>
+			</div>
 			</div>
 			</div>
 	 		<ul>
@@ -176,7 +185,6 @@ Her performing repertoire is mainly comprised of classical music from the greats
 				</audio>
 			</ul>
 		</div>
-	</div>
 	
 	<div id="tour">
 	<div class="name"><h1>Tour Dates</h1></div>
@@ -208,13 +216,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Chicago, Illinois</td>
       <td>
       <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -227,6 +237,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -273,13 +284,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -292,6 +305,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -346,13 +360,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Buenos Aires, Argentina</td>
       <td>
           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -365,6 +381,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -411,13 +428,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -430,6 +449,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -484,13 +504,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Rio de Janeiro, Brazil</td>
       <td>
           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -503,6 +525,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -549,13 +572,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -568,6 +593,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -622,13 +648,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>London, England</td>
       <td>
   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -641,6 +669,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -687,13 +716,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -706,6 +737,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -760,13 +792,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Berlin, Germany</td>
       <td>
          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -779,6 +813,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -825,13 +860,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -844,6 +881,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -898,13 +936,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Helinsinki, Finland</td>
       <td>
          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -917,6 +957,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -963,13 +1004,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
         <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -982,6 +1025,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1036,13 +1080,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Bangkok, Thailand</td>
       <td>
           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -1055,6 +1101,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1101,13 +1148,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
         <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -1120,6 +1169,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1174,13 +1224,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Beijing, China</td>
       <td>
           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -1193,6 +1245,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1239,13 +1292,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
         <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -1258,6 +1313,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1312,13 +1368,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Taipei, Taiwan</td>
       <td>
           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -1331,6 +1389,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1377,13 +1436,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
         <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -1396,6 +1457,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1450,13 +1512,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Seoul, South Korea</td>
       <td>
           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -1469,6 +1533,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1515,13 +1580,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -1534,6 +1601,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1588,13 +1656,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Toyko, Japan</td>
       <td>
          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -1607,6 +1677,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1653,13 +1724,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -1672,6 +1745,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1726,13 +1800,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Kyoto, Japan</td>
       <td>
           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -1745,6 +1821,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1791,13 +1868,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
         <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -1810,6 +1889,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1864,13 +1944,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
       <td>Sydney, Australia</td>
       <td>
           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ticket</button>
+
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket">Front Rows $30
 	<input type="radio" name="ticket">Middle Rows $25
@@ -1883,6 +1965,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
@@ -1929,13 +2012,15 @@ Her performing repertoire is mainly comprised of classical music from the greats
     </form>
   </div>
        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">VIP</button>
+
 <div id="id02" class="modal">
   
-  <form class="modal-content" action="/action_page.html">
+  <form class="modal-content" action="/action_page.php">
   
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <div class="container">
     <h1 class="title">VIP Tickets</h1>
+
 	<label for="type"><b> Ticket Type</b></label><br>
 	<input type="radio" name="ticket"> Lunch with SHU
 	<input type="radio" name="ticket">Meet and Greet
@@ -1948,6 +2033,7 @@ Her performing repertoire is mainly comprised of classical music from the greats
 	
     <label for="email"><b>Email Address</label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
 <h1 class="title"> Credit Card</h1>
     <label for="cc"><b>Name on Card</b></label>
     <input type="text" placeholder="Enter Name" name="psw" required>
