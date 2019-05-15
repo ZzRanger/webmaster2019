@@ -9,7 +9,7 @@ button{
 	background-color: white;
 	font-family: "segoe script";
 	border-radius: 25%;
-	font-coor:black;
+	color:black;
 }
 ul{
 	margin:10em 5em 5em;
@@ -30,7 +30,7 @@ table{
 
 td{
 	text-align:center;
-	font-color:white;
+	color:white;
 }
 .box{
 	border: 1px solid black;
@@ -120,7 +120,8 @@ font-size: 60px;
 }
 
 .up{
-margin: 10px;	
+margin: 10px;
+color:white;
 }
 /*slide show css*/
 
