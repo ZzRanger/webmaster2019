@@ -118,11 +118,17 @@ font-size: 60px;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+/*Get Updates*/
 
+.get{
+  text-align: center
+  color: white;
+}
 .up{
 margin: 10px;
 color:white;
 }
+
 /*slide show css*/
 
 .mySlides {
