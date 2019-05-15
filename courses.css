@@ -32,17 +32,6 @@ body {
 	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
 }
 
-.teachheading {
-	grid-column: 1 / -1;
-	text-align: center;
-	vertical-align: center;
-	font-size: 40px;
-	font-weight: bold;
-	color: white;  
-	margin-top: 20px;
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
 .coursesubheading {
 	grid-column: 1 / -1;
 	background-color: #FFD700;
@@ -52,7 +41,7 @@ body {
 	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-shadow: -0.5px 0 #696969, 0 0.5px #696969, 0.5px 0 #696969, 0 -0.5px #696969;
 }
 
 .padding {
@@ -121,7 +110,19 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 	justify-items: center;
 	background-color: #191970;
-	padding: 20px;
+	padding-bottom: 20px;
+}
+
+.teachheading {
+	grid-column: 1 / -1;
+	text-align: center;
+	vertical-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;  
+	margin-top: 20px;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	padding-bottom: 20px;
 }
 
 .box {
@@ -189,17 +190,5 @@ body {
 	grid-column: 1 / -1;
 	padding: 10px;
 	
-}
-
-/* Padding Code */
-
-.ON {
-	display: flex;
-	flex-direction: column;
-	background-color: white;
-	justify-content: center; 
-	align-items: center;
-	color: black;
-	padding: 20px;
 }
 
