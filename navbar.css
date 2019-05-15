@@ -1,11 +1,13 @@
 .navbar {
-  overflow: hidden;
   background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0%;
 }
 
 .navbar a {
@@ -32,9 +34,22 @@
 
 .dropdown {
   float: left;
-  overflow: hidden;
 }
 
+/* Sizing */
+
+@media screen and (max-width: 900px) {
+  .dropdown .dropbtn {   
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .dropdown .dropbtn {   
+    width: 300px;
+  }
+}
+ 
 .dropdown .dropbtn {
   cursor: pointer;
   font-size: 16px;  
@@ -47,7 +62,6 @@
   margin: 0;
   text-align: center;
   vertical-align: center;
-  width: 300px;
 }
 
 .navbar a:hover, .dropbtn:hover, .dropbtn:focus {
@@ -85,7 +99,20 @@
 
 .dropdowna {
   float: left;
-  overflow: hidden;
+ }
+
+/* Sizing */
+
+@media screen and (max-width: 900px) {
+  .dropdowna .dropbtna {   
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .dropdowna .dropbtna {   
+    width: 300px;
+  }
 }
 
 .dropdowna .dropbtna {
@@ -100,7 +127,6 @@
   margin: 0;
   text-align: center;
   vertical-align: center;
-  width: 300px;
 }
 
 .navbar a:hover, .dropbtna:hover, .dropbtna:focus {
@@ -132,4 +158,18 @@
 
 .showing {
   display: block;
+}
+
+/* Design Brief */
+
+@media screen and (max-width: 900px) {
+  .boxing {   
+    width: 100px;
+  }  
+}
+
+@media screen and (min-width: 901px) {
+  .boxing {   
+    width: 250px;
+  }
 }
