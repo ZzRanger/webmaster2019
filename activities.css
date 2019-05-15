@@ -45,23 +45,6 @@ height: 500px;
 
 /* Heading */
 
-body {
-	font-family: arial;
-}
-
-
-.miniheading {
-	text-align: center;
-	padding-bottom: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 70px;
-	grid-column: 1 / -1;
-	font-family: Gabriola;
-	z-index: 0;
-	
-}
-
 .item {
 	font-size: 30px;
 	padding: 15px;
@@ -103,19 +86,27 @@ height: 200px;
 
 .calendar {
 	display: flex;
-	padding: 90px;
-	background-color: #66CCFF;
+	padding: 30px;
+	background-color: #e0ffff;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	
 }
 
+.miniheading {
+	text-align: center;
+	font-size: 70px;
+	grid-column: 1 / -1;
+	font-family: Gabriola;
+	z-index: 0;
+}
+
 .border {
 	display: flex;
 	flex-template-columns: 1fr;
 	flex-direction: column;
-	padding: 50px;
+	padding: 30px;
 	border: 3px dashed black;
 	border-style: dotted;
 }
@@ -157,12 +148,12 @@ height: 200px;
 
 #local {
 	font-size: 30px;
-	line-height: 50px;
+	line-height: 60px;
 }
 
 #kansas {
 	font-size: 30px;
-	line-height: 50px;
+	line-height: 60px;
 }
 
 #nats {
@@ -257,14 +248,5 @@ content-align: bottom;
 	border: 1px solid black;
 	opacity: 1;
 	z-index: 1;
-	padding: 20px;
-}
-
-.ON {
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	color: black;
 	padding: 20px;
 }
