@@ -13,6 +13,13 @@ body{
 	margin: 15px;
 }
 
+#info{
+	font-size: 20px;
+	color: black;
+	text-align:left;
+	font-family: "lucida sans", sans-serif;
+}
+
 .tshirt{
 	margin: 10px;
 	width: 400px;
@@ -24,7 +31,7 @@ body{
 
 .shirt{
 font-color: white;
-font-family:"Brush Script MT", "Freestyle script";
+font-family:"Brush Script MT", "lucida calligraphy";
 }
 
 .name{
@@ -84,11 +91,7 @@ a:hover{
 	
 }
 
-#info{
-	font-size: 20px;
-	color: black;
-	text-align:left;
-}
+
 	
 	/*navbar*/
 	
