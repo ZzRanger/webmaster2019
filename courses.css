@@ -107,7 +107,7 @@ body {
 
 .teachers {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+	grid-template-columns: 1fr 1fr;
 	justify-items: center;
 	background-color: #191970;
 	padding-bottom: 20px;
