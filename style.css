@@ -25,12 +25,10 @@ ul{
 table{
 	border-spacing: 20px;
 	margin: 0 auto;
-	font-color:white;
 }
 
 td{
 	text-align:center;
-	font-color:white;
 }
 .box{
 	border: 1px solid black;
@@ -77,23 +75,34 @@ font-size: 60px;
   position: absolute;
   top: 8px;
   bottom: 0;
-left:8px;
+  left:8px;
   right: 0;
   height: 450px;
   width: 450px;
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
+  
 }
 
-.text-container:hover .overlay{
+.animate {
+	width: 450px;
+	height: 450px;
+	margin: 0;
+	position: relative;
+}
+
+.animate:hover .overlay{
   opacity: 1;
 }
+
 .text-container {
   position: relative;
   width: 50%;
   margin:0;
+
 }
+
 .text {
   color: black;
   opacity:1;
@@ -171,8 +180,6 @@ a:hover{
   top:0;
   width:100%;
   z-index: 1;
-  height:50px;
-  font-size: 20px;
 }
 .navbar a {
   color: white;
@@ -204,12 +211,6 @@ Align-items: center;
   box-sizing: border-box;
 }
 
-
-.right{
-	
-	text-align:left;
-	position:relative;
-	margin: 0 5px 0 5px;
 }
 /* Column container */
 .row {  
