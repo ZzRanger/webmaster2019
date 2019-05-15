@@ -47,15 +47,7 @@ height: 500px;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #FFCC99;
-}
-
-
-
-.summary {
-	text-align: center;
-	font-size: 30px;
-	margin: 50px;
+	background-image: linear-gradient(#a8c0ff, #3979A0);
 }
 
 /* Box Code */
@@ -71,15 +63,37 @@ height: 500px;
 	z-index: 0;
 }
 
+/* Summary Code */
+
+.outline {
+	padding: 20px;
+	background-color: #191970;
+}
+
+.summaryheading {
+	font-size: 50px;
+	text-align: left;
+	color: white;
+	margin: 30px;
+	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+}
+
+
+.summary {
+	text-align: left;
+	font-size: 30px;
+	margin: 30px;
+	color: white;
+}
+
 /* Facilities */
 
 .facilities {
+	background-image: linear-gradient(#3979A0, #3f2b96);
 	padding: 20px;
-	background-color: blue;
 }
-
 .fheading {
-	font-size: 60px;
+	font-size: 50px;
 	text-align: center;
 	vertical-align: top;
 	padding: 20px;
@@ -261,13 +275,4 @@ height: 500px;
     -moz-animation-delay: 0;
     -moz-animation-play-state: running;
     -moz-animation-fill-mode: forwards;
-}
-
-.ON {
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center;
-	color: black;
-	padding: 20px;
 }
