@@ -60,12 +60,14 @@ height:400px;
 border: solid 10px;
 border-color: #00008B;
 transition: transform .2s;
+position:absolute;
 }
 
 .image:hover{
   transform: scale(1.5);
 border: 0px;
 }
+
 a{
 color: white;
 font-size: 20px;
@@ -82,6 +84,8 @@ a:hover{
 #info{
 	font-size: 20px;
 	color: black;
+	text-align:left;
+}
 	
 	/*navbar*/
 	
