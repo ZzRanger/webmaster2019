@@ -235,6 +235,7 @@ Align-items: center;
 .fakeimg {
   background-color: #aaa;
   width: 100%;
+   padding: .5em;
 }
 /* Footer */
 .footer {
