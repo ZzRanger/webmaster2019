@@ -62,7 +62,7 @@ height:400px;
 border: solid 10px;
 border-color: #00008B;
 transition: transform .2s;
-position:absolute;
+
 }
 
 .image:hover{
