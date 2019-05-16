@@ -24,7 +24,7 @@ ul{
 }
 
 table{
-	border-spacing: 20px;
+	border-spacing: 40px;
 	margin: 0 auto;
 }
 
@@ -39,12 +39,7 @@ td{
 	background: #4B4D70;
 	opacity: .5;
 }
-.album{
-	width: 450px;
-	height: 450px;
-	margin: 1em 1em 3em 4em;
-	
-}
+
 
 .main{
 	position:relative;
@@ -62,7 +57,7 @@ td{
 	width: 100%;
 	height: 100px;
 	text-align:center;
-	margin: 0 0 40px 0;
+	margin: 30px 0 40px 0;
 	padding: 10px 0 15px 0;
 	line-height:15px;
 }
@@ -74,18 +69,29 @@ font-size: 60px;
 }
 
 /*Music Description*/
+
+.album{
+	top: 8px;
+	bottom: 1px;
+	left:8px;
+	right: 0;
+	width: 450px;
+	height: 450px;
+	margin: 1em 1em 5em 4em;
+}
+
 .overlay {
   position: absolute;
-  top: 7px;
-  bottom: 0;
-  left:7px;
-  right: 0;
+  top: 8px;
+  bottom: 0px;
+  left:8px;
+  right: 0px;
   height: 450px;
   width: 450px;
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-  margin: 1em 1em 3em 4em;
+  margin: .5em 1em 5em 3.5em;
   
 }
 
@@ -252,4 +258,3 @@ Align-items: center;
   text-align: center;
   background: #ddd;
 }
-
