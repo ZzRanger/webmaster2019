@@ -33,7 +33,7 @@ td{
 	color:white;
 }
 .box{
-	border: 1px solid black;
+	font-weight: bold;
 	padding: 1em;
 	margin: .5em;
 }
