@@ -41,7 +41,8 @@ body {
 	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
-	text-shadow: -0.5px 0 #696969, 0 0.5px #696969, 0.5px 0 #696969, 0 -0.5px #696969;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: Tahoma, Geneva, sans-serif;
 }
 
 .padding {
